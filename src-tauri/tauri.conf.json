@@ -1,0 +1,64 @@
+{
+    "build": {
+        "beforeDevCommand": "pnpm dev",
+        "beforeBuildCommand": "pnpm build",
+        "devPath": "http://localhost:1420",
+        "distDir": "../dist",
+        "withGlobalTauri": false
+    },
+    "package": {
+        "productName": "DevToys",
+        "version": "0.0.0"
+    },
+    "tauri": {
+        "macOSPrivateApi": true,
+        "allowlist": {
+            "os": {
+                "all": true
+            },
+            "all": false,
+            "shell": {
+                "all": false,
+                "open": true
+            },
+            "globalShortcut": {
+                "all": true
+            },
+            "window": {
+                "all": true,
+                "setSize": true
+            }
+        },
+        "systemTray": {
+            "iconPath": "icons/icon.png",
+            "iconAsTemplate": true
+        },
+        "bundle": {
+            "active": true,
+            "targets": "all",
+            "identifier": "com.tauri.dev",
+            "icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.icns", "icons/icon.ico"]
+        },
+        "security": {
+            "csp": null
+        },
+        "windows": [
+            {
+                "acceptFirstMouse": true,
+                "alwaysOnTop": true,
+                "minWidth": 400,
+                "minHeight": 500,
+                "height": 800,
+                "width": 1200,
+                "resizable": true,
+                "center": true,
+                "title": "DevToys",
+                "visible": true,
+                "hiddenTitle": true,
+                "decorations": false,
+                "focus": true,
+                "transparent": true
+            }
+        ]
+    }
+}

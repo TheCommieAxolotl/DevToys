@@ -1,0 +1,29 @@
+.alert {
+    border: 1px solid rgb(255, 255, 255, 10%);
+    border-radius: 6px;
+    padding: 8px 12px;
+    background-color: transparent;
+    display: flex;
+    gap: 12px;
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 14px;
+    width: 100%;
+
+    &.error {
+        border: 1px solid rgb(255, 69, 58, 10%);
+        background-color: rgb(255, 69, 58, 5%);
+        color: rgb(255, 69, 58, 0.75);
+    }
+
+    &.warning {
+        border: 1px solid rgb(255, 159, 10, 10%);
+        background-color: rgb(255, 159, 10, 5%);
+        color: rgb(255, 159, 10, 0.75);
+    }
+
+    &.success {
+        border: 1px solid rgb(50, 215, 75, 10%);
+        background-color: rgb(50, 215, 75, 5%);
+        color: rgb(50, 215, 75, 0.75);
+    }
+}

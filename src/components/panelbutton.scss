@@ -1,0 +1,24 @@
+.panelbutton {
+    border: none;
+    border-radius: 6px;
+    padding: 5px 10px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+
+    color: rgb(255, 255, 255, 0.5);
+
+    &:hover,
+    &.active {
+        background-color: rgb(255, 255, 255, 7.5%);
+    }
+
+    &:active {
+        color: rgb(255, 255, 255, 0.75);
+        background-color: rgb(255, 255, 255, 15%);
+    }
+}

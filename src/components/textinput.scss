@@ -1,0 +1,54 @@
+@keyframes growIn {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.textinput {
+    border: 1px solid rgb(255, 255, 255, 10%);
+    border-radius: 6px;
+    padding: 2px 6px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    gap: 7.5px;
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 14px;
+
+    &:focus-within {
+        border: 1px solid rgb(255, 255, 255, 7.5%);
+        background-color: rgb(255, 255, 255, 5%);
+        color: rgb(255, 255, 255, 0.75);
+    }
+
+    .icon {
+        font-weight: 400;
+    }
+
+    input {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: inherit;
+        font-size: 14px;
+        font-weight: 500;
+        width: 100%;
+        padding: 0;
+    }
+
+    .clear-button {
+        background-color: transparent;
+        border: none;
+        font-size: 13px;
+        display: flex;
+        color: rgb(255, 255, 255, 50%);
+        animation: growIn 0.1s ease-in-out;
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "name": "devtoys",
+    "version": "0.0.0",
+    "description": "i don't even know",
+    "scripts": {
+        "start": "vite",
+        "dev": "vite",
+        "build": "vite build",
+        "serve": "vite preview",
+        "tauri": "tauri"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@tauri-apps/api": "^1.3.0",
+        "solid-js": "^1.7.0"
+    },
+    "devDependencies": {
+        "@tauri-apps/cli": "^1.3.1",
+        "@types/node": "^18.7.10",
+        "@wooorm/starry-night": "^2.0.0",
+        "colorjs.io": "0.4.4-patch.1",
+        "hast-util-to-html": "^8.0.4",
+        "sass": "^1.62.1",
+        "typescript": "^4.9.5",
+        "vite": "^4.2.1",
+        "vite-plugin-solid": "^2.5.0",
+        "vite-tsconfig-paths": "^4.2.0"
+    }
+}
